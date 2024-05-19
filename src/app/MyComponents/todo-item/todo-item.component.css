@@ -1,3 +1,96 @@
-.strike{
-    text-decoration: line-through;
+.todo-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: #f6faffe3; /* Light background color for better visibility */
+}
+
+.delete-btn {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Adjusted padding for better appearance */
+}
+
+.todo-item:hover {
+    border-color: #888;
+}
+
+.delete-btn:hover {
+    background-color: #f5c6cb;
+}
+
+.strike {
+    color: #bcbcbc;
+    text-decoration: line-through; /* Line-through effect for completed tasks */
+}
+
+.todo-inline-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.todo-left {
+    display: flex;
+  
+}
+
+.todo-inline-contents .form-check-input.large-checkbox {
+    transform: scale(1.5);
+    margin-right: 15px;
+}
+
+.todo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px; /* Font size for title */
+    font-weight: bold; /* Bold font for title */
+}
+
+.todo-desc {
+    margin: 0;
+    font-size: 14px; /* Font size for description */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .todo-item {
+        padding: 5px;
+    }
+
+    .delete-btn {
+        padding: 5px;
+    }
+
+    .todo-inline-contents {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo-inline-contents .form-check-input.large-checkbox {
+        margin-right: 10px;
+        transform: scale(1.2);
+    }
+
+    .todo-title {
+        font-size: 16px;
+    }
+
+    .todo-desc {
+        font-size: 14px;
+    }
 }

@@ -1,2 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+.sanchez-regular {
+    font-family: "Sanchez", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .sanchez-regular-italic {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
 
+  body {
+    background-image: url('how.png'); /* URL to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+    background-position: center; /* Centers the image */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    height: 100%; /* Ensures the background image covers the full height */
+    width: 100%; /* Ensures the background image covers the full width */
+}
+
+  

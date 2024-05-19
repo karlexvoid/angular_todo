@@ -1,11 +1,12 @@
-
-<div class="mb-4">
-    <h4 [ngClass]="{'strike': !todo.active}">{{todo.title}}</h4>
-    <p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="todo{{i}}" (click)="onCheckboxclick(todo)" [checked]="!todo.active">
-        <label class="form-check-label" for="todo{{i}}">Mark As Done</label>
+<div class="mb-4 todo-item">
+  <div class="todo-inline-contents">
+    <div class="todo-left">
+      <input type="checkbox" class="form-check-input large-checkbox" id="todo{{i}}" (click)="onCheckboxclick(todo)" [checked]="!todo.active">
+      <div class="todo-text">
+        <h4 [ngClass]="{'strike': !todo.active}" class="todo-title">{{todo.title}}</h4>
+        <p [ngClass]="{'strike': !todo.active}" class="todo-desc">{{todo.desc}}</p>
       </div>
-    <button class="btn btn-danger" (click)="onDeleteClick(todo)">Delete</button>
+    </div>
+    <button class="btn btn-danger delete-btn" (click)="onDeleteClick(todo)">Delete</button>
+  </div>
 </div>
-
